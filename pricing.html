@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="header__block-1">
+        <span onclick="redirect()" class="header__block-1__text l">Illustrations</span>
+        <span onclick="redirectToTwo()" class="header__block-1__text-1 l">Pricing</span>
+        <img class="header__block-1__img" src="./img/Frame.svg" alt="">
+    </div>
+    <div class="header__block-img">
+        <img onclick="redirectToHome()" class="header__img" src="./img/image (3).png" alt="">
+    </div>
+    <div class="header__block-2">
+        <span onclick="redirectToThree()" class="header__block-2__text l lblock">Among Us</span>
+        <button class="btn btn-primary header__block-2__text-1 l lblock" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+          Sign in
+        </button>
+        
+        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="staticBackdropLabel">Sign in</h5>
+            <button onclick="redirect()" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="header__input-box">
+              <p class="header__input-text l">Sign in with Gmail</p>
+              <input placeholder="Email" class="header__input" style="height: 3.5rem; font-size: 1rem; padding: 1.5rem 1.5rem 1.35rem 1.5rem; border-radius: 15px; border: none; background-color:white;" type="Email">
+              <input placeholder="Pasword" class="header__input" style="height: 3.5rem; font-size: 1rem; padding: 1.5rem 1.5rem 1.35rem 1.5rem; border-radius: 15px; border: none; background-color:white;" type="Email">
+              <button redirectToHome() onclick="redirect()" class="header__input-button">Sign in</button>
+            </div>
+          </div>
+        </div>
+
+
+          <button class="btn btn-primary header__block-2__boton lblock" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            Sign up
+          </button>
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Sign up</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="header__input-box">
+                <p class="header__input-text l">Sign up with Gmail</p>
+                <input placeholder="Email" class="header__input" style="height: 3.5rem; font-size: 1rem; padding: 1.5rem 1.5rem 1.35rem 1.5rem; border-radius: 15px; border: none; background-color:white;" type="Email">
+                <input placeholder="Pasword" class="header__input" style="height: 3.5rem; font-size: 1rem; padding: 1.5rem 1.5rem 1.35rem 1.5rem; border-radius: 15px; border: none; background-color:white;" type="Email">
+              <button redirectToHome() class="header__input-button">Sign up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>
+          <button class="btn btn-primary lbtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+            <img type="button" class="lbtn-img" src="./img/Screenshot 2023-12-28 at 15.27.44.png" alt="">
+            <img type="button" class="lbtn-img-1" src="./img/Screenshot 2023-12-28 at 15.30.37.png" alt="">
+          </button>
+        </p>
+        <div style="position: absolute; min-height: 120px;">
+          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body lcard" style="width: 300px;">
+              <span onclick="redirect()" class="header__block-1__text l">Illustrations</span>
+              <span onclick="redirectToTwo()" class="header__block-1__text-1 l">Pricing</span>
+              <span onclick="redirectToThree()" class="header__block-2__text l lblock">Among Us</span>
+              <div class="header__block-2__boton-box">
+                <button class="btn btn-primary header__block-2__text-1 l lblock" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                  Sign in
+                </button>
+                
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="staticBackdropLabel">Sign in</h5>
+                    <button onclick="redirect()" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div class="header__input-box">
+                      <p class="header__input-text l">Sign in with Gmail</p>
+                      <input placeholder="Email" class="header__input" style="height: 3.5rem; font-size: 1rem; padding: 1.5rem 1.5rem 1.35rem 1.5rem; border-radius: 15px; border: none; background-color:white;" type="Email">
+                      <input placeholder="Pasword" class="header__input" style="height: 3.5rem; font-size: 1rem; padding: 1.5rem 1.5rem 1.35rem 1.5rem; border-radius: 15px; border: none; background-color:white;" type="Email">
+                      <button redirectToHome() onclick="redirect()" class="header__input-button">Sign in</button>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="btn btn-primary header__block-2__boton lblock" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                  Sign up
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Sign up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div class="header__input-box">
+                      <p class="header__input-text l">Sign up with Gmail</p>
+                      <input placeholder="Email" class="header__input" style="height: 3.5rem; font-size: 1rem; padding: 1.5rem 1.5rem 1.35rem 1.5rem; border-radius: 15px; border: none; background-color:white;" type="Email">
+                      <input placeholder="Pasword" class="header__input" style="height: 3.5rem; font-size: 1rem; padding: 1.5rem 1.5rem 1.35rem 1.5rem; border-radius: 15px; border: none; background-color:white;" type="Email">
+                    <button redirectToHome() class="header__input-button">Sign up</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+          
+    
+</div>
+
+    <script>
+        function redirect() {
+            window.location.href = "./ilustration.html";
+        }
+        function redirectToTwo() {
+            window.location.href = "./pricing.html";
+        }
+        function redirectToThree() {
+            window.location.href = "./aboutus.html";
+        }
+        function redirectToHome() {
+            window.location.href = "./index.html";
+        }
+    </script>
+    <main>
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

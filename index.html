@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nova+Square&family=Rubik+Scribble&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;1,400&family=Josefin+Sans&family=Nova+Square&family=Rubik+Scribble&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./ilustration.html">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="body">
+  <div class="header">
+    <div class="header__block-1">
+        <span onclick="redirect()" class="header__block-1__text l">Illustrations</span>
+        <span onclick="redirectToTwo()" class="header__block-1__text-1 l">Pricing</span>
+        <img class="header__block-1__img" src="./img/Frame.svg" alt="">
+    </div>
+    <div class="header__block-img">
+        <img onclick="redirectToHome()" class="header__img" src="./img/image (3).png" alt="">
+    </div>
+    <div class="header__block-2">
+        <span onclick="redirectToThree()" class="header__block-2__text l lblock">Among Us</span>
+        <button class="btn btn-primary header__block-2__text-1 l lblock" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+          Sign in
+        </button>
+        
+        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="staticBackdropLabel">Sign in</h5>
+            <button onclick="redirect()" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="header__input-box">
+              <p class="header__input-text l">Sign in with Gmail</p>
+              <input placeholder="Email" class="header__input" style="height: 3.5rem; font-size: 1rem; padding: 1.5rem 1.5rem 1.35rem 1.5rem; border-radius: 15px; border: none; background-color:white;" type="Email">
+              <input placeholder="Pasword" class="header__input" style="height: 3.5rem; font-size: 1rem; padding: 1.5rem 1.5rem 1.35rem 1.5rem; border-radius: 15px; border: none; background-color:white;" type="Email">
+              <button redirectToHome() onclick="redirect()" class="header__input-button">Sign in</button>
+            </div>
+          </div>
+        </div>
+
+
+          <button class="btn btn-primary header__block-2__boton lblock" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            Sign up
+          </button>
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Sign up</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="header__input-box">
+                <p class="header__input-text l">Sign up with Gmail</p>
+                <input placeholder="Email" class="header__input" style="height: 3.5rem; font-size: 1rem; padding: 1.5rem 1.5rem 1.35rem 1.5rem; border-radius: 15px; border: none; background-color:white;" type="Email">
+                <input placeholder="Pasword" class="header__input" style="height: 3.5rem; font-size: 1rem; padding: 1.5rem 1.5rem 1.35rem 1.5rem; border-radius: 15px; border: none; background-color:white;" type="Email">
+              <button redirectToHome() class="header__input-button">Sign up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>
+          <button class="btn btn-primary lbtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+            <img type="button" class="lbtn-img" src="./img/Screenshot 2023-12-28 at 15.27.44.png" alt="">
+            <img type="button" class="lbtn-img-1" src="./img/Screenshot 2023-12-28 at 15.30.37.png" alt="">
+          </button>
+        </p>
+        <div style="position: absolute; min-height: 120px;">
+          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body lcard" style="width: 300px;">
+              <span onclick="redirect()" class="header__block-1__text l">Illustrations</span>
+              <span onclick="redirectToTwo()" class="header__block-1__text-1 l">Pricing</span>
+              <span onclick="redirectToThree()" class="header__block-2__text l lblock">Among Us</span>
+              <div class="header__block-2__boton-box">
+                <button class="btn btn-primary header__block-2__text-1 l lblock" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                  Sign in
+                </button>
+                
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="staticBackdropLabel">Sign in</h5>
+                    <button onclick="redirect()" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div class="header__input-box">
+                      <p class="header__input-text l">Sign in with Gmail</p>
+                      <input placeholder="Email" class="header__input" style="height: 3.5rem; font-size: 1rem; padding: 1.5rem 1.5rem 1.35rem 1.5rem; border-radius: 15px; border: none; background-color:white;" type="Email">
+                      <input placeholder="Pasword" class="header__input" style="height: 3.5rem; font-size: 1rem; padding: 1.5rem 1.5rem 1.35rem 1.5rem; border-radius: 15px; border: none; background-color:white;" type="Email">
+                      <button redirectToHome() onclick="redirect()" class="header__input-button">Sign in</button>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="btn btn-primary header__block-2__boton lblock" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                  Sign up
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Sign up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div class="header__input-box">
+                      <p class="header__input-text l">Sign up with Gmail</p>
+                      <input placeholder="Email" class="header__input" style="height: 3.5rem; font-size: 1rem; padding: 1.5rem 1.5rem 1.35rem 1.5rem; border-radius: 15px; border: none; background-color:white;" type="Email">
+                      <input placeholder="Pasword" class="header__input" style="height: 3.5rem; font-size: 1rem; padding: 1.5rem 1.5rem 1.35rem 1.5rem; border-radius: 15px; border: none; background-color:white;" type="Email">
+                    <button redirectToHome() class="header__input-button">Sign up</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+          
+    
+</div>
+
+    <div class="i__frame1">
+        <div class="i__frame1__box">
+            <h1 class="i__frame1__box-text1">Create beautiful illustrations, no design skills needed</h1>
+            <p class="i__frame1__box-text2">A growing illustration library that you can make your own</p>
+                <div class="i__frame1__box-slider">
+                    <div class="i__frame1__box-slider-1">
+                        <div id="carouselExampleIndicators" class="carousel slide lu">
+                            <div class="carousel-indicators ">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner lu">
+                              <div class="carousel-item active">
+                                <img src="https://designstripe-secure.imgix.net/scene-snapshots/b47b5136-64d4-4d6b-8aed-e641e9246c22/1669963983137/default?auto=format&fit=clip&h=400&s=fc5bd8d6ce886d989dbc5c07d8ae6395" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://designstripe-secure.imgix.net/scene-snapshots/d79b59d7-266d-45c2-b991-ea4c72bfd70d/1672390816812/default?auto=format&fit=clip&h=400&s=31f6a811cc52441fddfb0ff911e1ea40" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://designstripe-secure.imgix.net/scene-snapshots/6f58c22a-6869-43ea-ac65-9326ac9e8ad4/1677001629217/default?auto=format&fit=clip&h=400&s=42fd38543d3029a12d3b2fca480d46b2" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    <div class="i__frame1__box-slider-2">
+                        <p class=" i__frame1__box-slider-2-text ">This are our 3 the most popular and the most downloded projects. If you want to find more insane project which you can change as you want</p>
+                        <button onclick="redirect()" class="i__frame1__box-button ">
+                        <p class="i__frame1__box-button-text ">Find the perfect illustration</p>
+                    </button>
+                    </div>
+                    
+                </div>
+        </div>
+        <div class="i__frame1__box2">
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+    
+
+    <h1 class="nk__main-title">designstripe in action</h1>
+
+        <div class="nk__top-cards">
+
+                    <div class="nk__card-column" >
+                        <img src="./nk-img/IMAGE (1).png"
+                            class="nk__card-img-top" alt="...">
+                        <div class="nk__card-body">
+                            <h5 class="nk__card-title">Remember everything you read</h5>
+                            <p class="nk__card-text">The all-in-one platform for recording, studying, and remembering your ebooks.</p>
+                            <button type="button" class="nk__btn nk__btn-primary nk__button-1" data-bs-toggle="modal" data-bs-target="#exampleModal-1">
+                                Creat account
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="nk__card-column" >
+                        <div class="nk__card-2-header">
+                            <p class="nk__card-column-header-info">Pricing</p>
+                            <p class="nk__card-column-header-info">About us</p>
+                            <p class="nk__card-column-header-info">We are hiring</p>
+                            <button type="button" class="nk__card-column-header-info-button">Sing up</button>
+                        </div>
+                        <div class="nk__card-body">
+                            <h5 class="nk__card-2-title">Remote work doesn't have to be hard</h5>
+                            <a href="#" class="nk__btn nk__btn-primary-2">Go started</a>
+                        </div>
+                        <img src="./nk-img/IMAGE (3).png"class="nk__card-img-top-2" alt="...">
+                    </div>
+                    
+                    <div class="nk__card-column" >
+                        <div class="nk__card-body">
+                            <h5 class="nk__card-3-title">We deliver!</h5>
+                            <p class="nk__card-3-text">Same day shopining, internation delivery</p>
+                            <img src="./nk-img/IMAGE (2).png" class="nk__card-img-top-3" alt="...">
+                            <a href="#" class="nk__btn nk__btn-primary-3">Set up shipping rates</a>
+                        </div>
+                    </div>
+        </div>
+
+        <div class="nk__down-cards">
+            
+                    <div class="nk__card" style="width: 44rem;">
+                        <img src="./nk-img/IMAGE (6).png"
+                            class="nk__card-img-down" alt="...">
+                        <div class="nk__card-body-row">
+                            <h5 class="nk__card-4-title">Hassle-free online learning</h5>
+                            <p class="nk__card-4-text">Connect with your students aive them the support they need, and make learning online fun.</p>
+                            <a href="#" class="nk__btn nk__btn-primary">Get started for free</a>
+                        </div>
+                    </div>
+
+                    <div class="nk__card" style="width: 22rem;">
+                        <div id="carouselExampleCaptions" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 0"></button>
+                            </div>
+                            <div class="carousel-inner" style="width: 18rem;">
+                                <div class="carousel-item active" style="width: 16rem;">
+                                    <div class="carousel__caption">
+                                        <img src="./nk-img/IMAGE (7).png" class="nk__carousel__img" alt="...">
+                                        <h5 class="nk__carousel__caption-title"> Voice</h5>
+                                        <p class="nk__carousel__caption-txt">Collaborate with your team over both voice and text.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" style="width: 16rem;">
+                                    <div class="carousel__caption">
+                                        <img src="./nk-img/IMAGE (8).png" class="nk__carousel__img" alt="...">
+                                        <h5 class="nk__carousel__caption-title"> Form</h5>
+                                        <form class="nk__row nk__g-3">
+                                            <div class="nk__col-md-6">
+                                                <input type="email" class="nk__form-control" id="inputEmail4" placeholder="Email">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="password" class="nk__form-control" id="inputPassword4" placeholder="Password">
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="text" class="nk__form-control" id="inputAddress" placeholder="Address: 1234 Main St">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="nk__form-control" id="inputCity" placeholder="City">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" class="nk__form-control" id="inputCity" placeholder="State">
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="nk__btn nk__btn-primary-form">Sign in</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nk__card" style="width: 44rem;">
+                        <img src="./nk-img/IMAGE (4).png"
+                            class="nk__card-img-down-3" alt="...">
+                        <div class="nk__card-body-row">
+                            <h5 class="nk__card-6-title">The platform for creatives</h5>
+                            <p class="nk__card-6-text">Find exactly what you need, across thousands of beautifully high-quality creative tools and assets</p>
+                            <div class="input-group input-group-sm mb-3">
+                                <input type="text" class="form-control" placeholder="Enter your email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Join in group</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+    <script>
+        function redirect() {
+            window.location.href = "./ilustration.html";
+        }
+        function redirectToTwo() {
+            window.location.href = "./pricing.html";
+        }
+        function redirectToThree() {
+            window.location.href = "./aboutus.html";
+        }
+        function redirectToHome() {
+            window.location.href = "./index.html";
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
